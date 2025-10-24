@@ -3,6 +3,7 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import path from 'node:path';
 
 export default defineConfig(({ command }) => {
   return {
@@ -36,6 +37,7 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
       emptyOutDir: true,
+      envDir: path.resolve(__dirname),
     },
     plugins: [
       injectHTML(),
