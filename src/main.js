@@ -6,7 +6,7 @@ import { fetchPixabayImages } from './js/pixabay-api';
 import { renderGalleryMarkup } from './js/render-functions';
 
 const refs = {
-  form: document.querySelector('.search-form'),
+  form: document.querySelector('.form'),
   input: document.querySelector('.search-input'),
   submitBtn: document.querySelector('.search-button'),
   gallery: document.querySelector('.gallery'),
